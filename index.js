@@ -15,6 +15,7 @@ const requestLogger = (request, response, next) => {
   console.log("---");
   next();
 };
+
 // Middleware se usa así
 app.use(requestLogger);
 
