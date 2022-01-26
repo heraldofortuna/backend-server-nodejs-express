@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
+app.use(express.static("build"));
 
 // Tomamos el middleware para usar y permitir solicitudes
 // de todos los orígenes
